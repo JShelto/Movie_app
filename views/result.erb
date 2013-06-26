@@ -1,0 +1,8 @@
+The movie you searched for was <%= @query %>
+
+<ol>
+	<% @movies.each do |movie| %>
+		<li><a href="/movie?id"><%=movie["Title"] %></a></li>
+	<% end %>
+
+</ol>
